@@ -1,7 +1,27 @@
-function signup() {
-  alert("Signup button works");
-}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login - UncensoredJuris</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
-function login() {
-  alert("Login button works");
-}
+<body>
+
+<h1>Login</h1>
+
+<input id="email" placeholder="Email">
+<br><br>
+
+<input id="password" type="password" placeholder="Password">
+<br><br>
+
+<button onclick="login()">Login</button>
+<button onclick="signup()">Sign Up</button>
+
+<p id="status"></p>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+<script src="js/supabase.js"></script>
+<script src="js/auth.js"></script>
+</body>
+</html>
