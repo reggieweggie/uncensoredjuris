@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Debate Center - UncensoredJuris</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="header">
+  <h1>Debate Center</h1>
+
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="forum.html">Forum</a>
+    <a href="debates.html">Debate Center</a>
+    <a href="lawyers.html">Lawyer Directory</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Structured Civic Debate</h2>
+  <p>Create arguments, respond with rebuttals, and vote on persuasiveness.</p>
+</section>
+
+<!-- CREATE DEBATE -->
+<section class="post-box">
+  <h3>Create a Debate</h3>
+
+  <input id="topic" placeholder="Debate Topic (e.g. Should hate speech be protected?)" />
+  <br><br>
+
+  <textarea id="affirmative" placeholder="Affirmative Argument (Pro)"></textarea>
+  <br><br>
+
+  <textarea id="negative" placeholder="Negative Argument (Con)"></textarea>
+  <br><br>
+
+  <button onclick="createDebate()">Publish Debate</button>
+</section>
+
+<!-- DEBATES LIST -->
+<section>
+  <h2>Active Debates</h2>
+  <div id="debateList"></div>
+</section>
+
+<script src="js/debate.js"></script>
+
+</body>
+</html>
