@@ -97,3 +97,7 @@ button {
   margin-top: 5px;
   cursor: pointer;
 }
+input[type="number"] {
+  width: 60px;
+  margin: 3px;
+}
