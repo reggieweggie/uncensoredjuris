@@ -79,3 +79,21 @@ button {
   margin-top: 10px;
   cursor: pointer;
 }
+.debate-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.debate-grid div {
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+button {
+  padding: 8px;
+  margin-top: 5px;
+  cursor: pointer;
+}
