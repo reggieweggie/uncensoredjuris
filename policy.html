@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Policy Ideas - UncensoredJuris</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="header">
+  <h1>Policy Ideas</h1>
+
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="forum.html">Forum</a>
+    <a href="debates.html">Debate Center</a>
+    <a href="policy.html">Policy Ideas</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Propose Real Policy Solutions</h2>
+  <p>Submit ideas to improve laws, schools, communities, and government systems.</p>
+</section>
+
+<section class="post-box">
+  <h3>Create a Policy Proposal</h3>
+
+  <input id="title" placeholder="Policy Title">
+  <br><br>
+
+  <textarea id="problem" placeholder="What problem does this solve?"></textarea>
+  <br><br>
+
+  <textarea id="solution" placeholder="Your solution"></textarea>
+  <br><br>
+
+  <button onclick="addPolicy()">Submit</button>
+</section>
+
+<section>
+  <h2>Submitted Policies</h2>
+  <div id="policies"></div>
+</section>
+
+<script>
+let policies = [];
+
+function addPolicy() {
+  const title = document.getElementById("title").value;
+  const problem = document.getElementById("problem").value;
+  const solution = document.getElementById("solution").value;
+
+  if (!title || !problem || !solution) return;
+
+  policies.unshift({ title, problem, solution });
+
+  render();
+}
+
+function render() {
+  const container = document.getElementById("policies");
+  container.innerHTML = "";
+
+  policies.forEach(p => {
+    container.innerHTML += `
+      <div class="card">
+        <h3>${p.title}</h3>
+        <p><strong>Problem:</strong> ${p.problem}</p>
+        <p><strong>Solution:</strong> ${p.solution}</p>
+      </div>
+    `;
+  });
+}
+</script>
+
+</body>
+</html>
