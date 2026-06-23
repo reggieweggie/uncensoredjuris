@@ -1,0 +1,4 @@
+const SUPABASE_URL = "sb_publishable_rsyOl8_jgSKC7Sem7gz8cw_oKUYMpfz";
+const SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhmanptemJtbnB2dmFod2xrZnFjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODIyMjY0NzUsImV4cCI6MjA5NzgwMjQ3NX0.7qcx750eYxjqLICXBagw3Wv0h7ElRTLobMj4jTeN_rs";
+
+const client = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
