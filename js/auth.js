@@ -8,10 +8,11 @@ async function signup() {
   });
 
   if (error) {
-    document.getElementById("status").innerText = error.message;
-  } else {
-    document.getElementById("status").innerText = "Check your email to confirm account.";
+    alert(error.message);
+    return;
   }
+
+  alert("Account created! Check your email to confirm.");
 }
 
 async function login() {
@@ -24,9 +25,22 @@ async function login() {
   });
 
   if (error) {
-    document.getElementById("status").innerText = error.message;
-  } else {
-    document.getElementById("status").innerText = "Logged in successfully!";
-    localStorage.setItem("user", JSON.stringify(data.user));
+    alert(error.message);
+    return;
   }
+
+  // store session
+  localStorage.setItem("user", JSON.stringify(data.user));
+
+  alert("Logged in successfully!");
+
+  // redirect to forum
+  window.location.href = "forum.html";
+}
+
+async function logout() {
+  await client.auth.signOut();
+  localStorage.removeItem("user");
+  alert("Logged out");
+  window.location.href = "index.html";
 }
