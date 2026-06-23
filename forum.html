@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forum - UncensoredJuris</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="header">
+  <h1>Forum</h1>
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="forum.html">Forum</a>
+    <a href="debates.html">Debate Center</a>
+    <a href="lawyers.html">Lawyer Directory</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Public Discussion Forum</h2>
+  <p>Share ideas, debate policies, and discuss legal and civic issues.</p>
+</section>
+
+<section class="post-box">
+  <h3>Create a Post</h3>
+
+  <input id="title" placeholder="Post Title" />
+  <br><br>
+
+  <select id="category">
+    <option>Constitutional Law</option>
+    <option>Criminal Justice</option>
+    <option>Education Policy</option>
+    <option>Civil Rights</option>
+    <option>Immigration</option>
+    <option>Government Reform</option>
+  </select>
+
+  <br><br>
+
+  <textarea id="content" placeholder="Write your argument or opinion..."></textarea>
+  <br><br>
+
+  <button onclick="addPost()">Post</button>
+</section>
+
+<section>
+  <h2>Posts</h2>
+  <div id="posts"></div>
+</section>
+
+<script src="js/forum.js"></script>
+
+</body>
+</html>
