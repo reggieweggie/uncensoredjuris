@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  color: #111;
+}
+
+.header {
+  background: #111;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.tagline {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.nav {
+  margin-top: 10px;
+}
+
+.nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.hero {
+  padding: 50px;
+  text-align: center;
+  background: white;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: blue;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 12px;
+}
